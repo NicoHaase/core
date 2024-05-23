@@ -27,6 +27,7 @@ class CreateActivityLogResolver implements MutationResolverInterface
             throw new \InvalidArgumentException('Missing input of type ActivityLog');
         }
 
+        $item->id = 42;
         $item->name = 'hi';
 
         return $item;
